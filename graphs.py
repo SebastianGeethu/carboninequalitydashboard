@@ -10,6 +10,7 @@ df = pd.read_csv('CombinedDoc_new.csv')
 
 # Create a Dash web application
 app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
+server = app.server
 
 graph_controls = dbc.Card([
     dbc.Row([
